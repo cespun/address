@@ -12,5 +12,5 @@
 :local limit [/ip hotspot active get [find user="$nama"] limit-bytes-total];
 :local totq [(($limit)/1048576)];
 :local useraktif [/ip hotspot active print count-only];
-:tool fetch url="https://api.telegram.org/bot5937350334:AAGpkfks5tcleg0-KU0OBkb6CGKk1wHqXx8/sendMessage?chat_id=209467199&text===>>INFO%20LOGIN<<==%0A-%20Kode%20Voucher%20:%20$nama%0A-%20IP%20Address%20:%20$ips%20%0A-%20Mac%20Address%20:%20$mac%0A-%20Menggunakan%20:%20$host%0A-%20Metode%20Login%20:%20$lby%0A-%20Kuota%20:%20$totq%20Mb%0A-%20Expired%20Voucher%20:%20$exp%0A-%20Waktu%20Login%20:%20$datetime%0A-%20Paket%20:%20$profile%0A-%20User%20Online%20:%20$useraktif%20user" mode=http keep-result=no;
+:tool fetch url="https://api.telegram.org/bot5937350334:AAGpkfks5tcleg0-KU0OBkb6CGKk1wHqXx8/sendMessage?chat_id=209467199&text=%3D%3D%3E%3EINFO%20LOGIN%3C%3C%3D%3D%0A-%20Kode%20Voucher%20:%20$nama%0A-%20IP%20Address%20:%20$ips%20%0A-%20Mac%20Address%20:%20$mac%0A-%20Menggunakan%20:%20$host%0A-%20Metode%20Login%20:%20$lby%0A-%20Kuota%20:%20$totq%20Mb%0A-%20Expired%20Voucher%20:%20$exp%0A-%20Waktu%20Login%20:%20$datetime%0A-%20Paket%20:%20$profile%0A-%20User%20Online%20:%20$useraktif%20user" mode=http keep-result=no;
 }
